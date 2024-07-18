@@ -2,14 +2,14 @@
 class Db {
    public function getConnect()
    {
-       $conn = mysqli_connect("mysql", "root", "root", "airslate");
-
-      if (!$conn) {
-          echo "Could not connect MySQL.";
-          echo "Код ошибки errno: " . mysqli_connect_errno();
-          echo "Текст ошибки error: " . mysqli_connect_error();
-          exit;
-      }
+       $conn = null;
+       try {
+           $conn = mysqli_connect("mysql", "root", "root", "airslate");
+       } catch (Exception $e) {
+           echo "Could not connect MySQL.";
+           echo "<br>Error code errno: " . mysqli_connect_errno();
+           echo "<br>Error: " . mysqli_connect_error();
+       }
       return $conn;
   }
 }

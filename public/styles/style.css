@@ -6,6 +6,9 @@ td {
     max-width: 150px !important;
 }
 
-.new-addr-form, .edit-addr-form input.red {
+.edit-addr-form input.red {
+    color: #EB4732
+}
+.new-addr-form input.red {
     color: #EB4732
 }
