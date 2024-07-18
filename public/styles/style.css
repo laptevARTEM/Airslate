@@ -1,0 +1,11 @@
+.addresses-table-block {
+    max-width: 1300px !important;
+}
+
+td {
+    max-width: 150px !important;
+}
+
+.new-addr-form, .edit-addr-form input.red {
+    color: #EB4732
+}

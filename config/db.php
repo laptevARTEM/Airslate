@@ -1,9 +1,8 @@
 <?php
 class Db {
-   public function __construct(){
-   }
-   public function getConnect(){
-       $conn = mysqli_connect("localhost", "root", "notgonadie222", "WebbyLabTestTask");
+   public function getConnect()
+   {
+       $conn = mysqli_connect("mysql", "root", "root", "airslate");
 
       if (!$conn) {
           echo "Could not connect MySQL.";
